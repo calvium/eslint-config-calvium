@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-calvium",
+  "version": "0.3.0",
+  "description": "eslint configuration to be used in Calvium React Native Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvium/eslint-config-calvium.git"
+  },
+  "keywords": [
+    "eslint",
+    "calvium"
+  ],
+  "author": "Pablo Carrillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calvium/eslint-config-calvium/issues"
+  },
+  "homepage": "https://github.com/calvium/eslint-config-calvium#readme",
+  "dependencies": {
+    "babel-eslint": "7.1.1",
+    "eslint-config-airbnb": "13.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-flowtype": "2.29.1",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-react": "6.8.0",
+    "eslint-plugin-react-native": "2.2.1"
+  },
+  "perDependency": {
+    "eslint": "3.x"
+  }
+}
