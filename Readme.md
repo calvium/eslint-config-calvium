@@ -28,6 +28,12 @@ after that you just need a `.eslintrc` in the same folder than the `package.json
 
 You **must** install the appropiate version of eslint for your project. A version bigger than `3.11.1` and below `4.x.x` is recommended.
 
+```lang=bash
+npm i eslint@3 --save-dev
+#or
+yarn add eslint@3 --dev
+```
+
 To check the package is working in your installation run:
 
 ```lang=bash
