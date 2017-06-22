@@ -148,6 +148,7 @@ module.exports = {
     // disable
     'react/jsx-boolean-value': 0,
     'react/jsx-filename-extension': 0,
+    'react/jsx-curly-spacing': 0,
     // Causes errors in React Native <Text> elements if you use a '
     'react/no-unescaped-entities': 0,
     // disable as WebStorm marks this as an error
