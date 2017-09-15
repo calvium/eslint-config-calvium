@@ -1,4 +1,8 @@
 module.exports = {
+  // Jest Tests: Prevent 'it' and 'describe' causing ESLint errors
+  env: {
+    jest: true
+  },
   plugins: [
     'flowtype',
     'react-native'
