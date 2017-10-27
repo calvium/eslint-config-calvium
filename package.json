@@ -29,7 +29,7 @@
     "eslint-plugin-react": "6.8.0",
     "eslint-plugin-react-native": "2.2.1"
   },
-  "perDependency": {
+  "peerDependency": {
     "eslint": "3.x"
   }
 }
