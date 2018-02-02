@@ -172,6 +172,8 @@ module.exports = {
     'import/no-duplicates': 1,
     "react-native/no-unused-styles": 2,
     "react-native/no-color-literals": 2,
+    "react/prefer-stateless-function": [2, {"ignorePureComponents": true}],
+ "multiline": true }}]
     // Don't force () around `foo` in `foo => { .. do something }`
     "arrow-parens": 0,
     // I think it's ok to have class methods that could be static not static sometimes. (e.g. a `renderEmpty` method on a component)
@@ -198,7 +200,8 @@ module.exports = {
     "no-mixed-operators": 0,
     "no-confusing-arrow": 0,
     "react/jsx-wrap-multilines": 0,
-    "indent": 0
+    "indent": 0,
+     "object-curly-newline": [0, {"ObjectExpression": "always", "ObjectPattern": { "multiline": true }}]
     // .. end disabling for T6200
   },
   'settings': {

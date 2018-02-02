@@ -1,7 +1,7 @@
 Eslint Config Calvium
 =====================
 
-Current React Native tested versions from RN 0.39.0 to RN 0.43.0 but it may work in earliers too.
+Current React Native tested versions from `52.x` but it may work in earliers too.
 
 [eslint](http://eslint.org/)
 
@@ -26,12 +26,12 @@ after that you just need a `.eslintrc` in the same folder than the `package.json
 
 ##NOTES
 
-You **must** install the appropiate version of eslint for your project. A version bigger than `3.11.1` and below `4.x.x` is recommended.
+You **must** install the appropiate version of eslint for your project. Version 4 is recommended
 
 ```lang=bash
-npm i eslint@3 --save-dev
+npm i eslint@4 --save-dev
 #or
-yarn add eslint@3 --dev
+yarn add eslint@4 --dev
 ```
 
 To check the package is working in your installation run:
