@@ -195,6 +195,8 @@ module.exports = {
         "message": "Please use Object.defineProperty instead."
       }
     ],
+    // used to denote unused arguments in callbacks
+    "no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
     // Disabled due to conflict with Prettier (T6200)
     "react/jsx-closing-bracket-location": 0,
     "no-mixed-operators": 0,
