@@ -5,6 +5,7 @@ module.exports = {
   },
   plugins: [
     'flowtype',
+    "promise",
     'react-native'
   ],
   parserOptions: {
@@ -56,13 +57,8 @@ module.exports = {
       0
     ],
     'no-return-assign': [0],
-    indent: [
-      'warn',
-      2,
-      {
-        SwitchCase: 1
-      }
-    ],
+    // Prettier deals with the indentation
+    indent: 0,
     'brace-style': [
       'warn',
       '1tbs'
@@ -71,9 +67,8 @@ module.exports = {
       'warn',
       'never'
     ],
-    'no-unused-vars': [
-      'warn'
-    ],
+    // used to denote unused arguments in callbacks
+    "no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
     'arrow-body-style': [
       'warn',
       'as-needed'
@@ -173,7 +168,6 @@ module.exports = {
     "react-native/no-unused-styles": 2,
     "react-native/no-color-literals": 2,
     "react/prefer-stateless-function": [2, {"ignorePureComponents": true}],
- "multiline": true }}]
     // Don't force () around `foo` in `foo => { .. do something }`
     "arrow-parens": 0,
     // I think it's ok to have class methods that could be static not static sometimes. (e.g. a `renderEmpty` method on a component)
@@ -195,16 +189,24 @@ module.exports = {
         "message": "Please use Object.defineProperty instead."
       }
     ],
-    // used to denote unused arguments in callbacks
-    "no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
     // Disabled due to conflict with Prettier (T6200)
     "react/jsx-closing-bracket-location": 0,
     "no-mixed-operators": 0,
     "no-confusing-arrow": 0,
     "react/jsx-wrap-multilines": 0,
-    "indent": 0,
-     "object-curly-newline": [0, {"ObjectExpression": "always", "ObjectPattern": { "multiline": true }}]
+    "object-curly-newline": [0, {"ObjectExpression": "always", "ObjectPattern": {"multiline": true}}],
     // .. end disabling for T6200
+    // Promise rules
+    "promise/always-return": "off",
+    "promise/no-return-wrap": "error",
+    "promise/param-names": "error",
+    "promise/catch-or-return": "error",
+    "promise/no-native": "off",
+    "promise/no-nesting": "warn",
+    "promise/no-promise-in-callback": "warn",
+    "promise/no-callback-in-promise": "warn",
+    "promise/avoid-new": "warn",
+    "promise/no-return-in-finally": "warn",
   },
   'settings': {
     flowtype: {

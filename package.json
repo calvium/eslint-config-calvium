@@ -10,10 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/calvium/eslint-config-calvium.git"
   },
-  "keywords": [
-    "eslint",
-    "calvium"
-  ],
+  "keywords": ["eslint", "calvium"],
   "author": "Pablo Carrillo",
   "license": "MIT",
   "bugs": {
@@ -27,7 +24,8 @@
     "eslint-plugin-flowtype": "2.41.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.5.1",
-    "eslint-plugin-react-native": "3.2.1"
+    "eslint-plugin-react-native": "3.2.1",
+    "eslint-plugin-promise": "3.6.0"
   },
   "peerDependency": {
     "eslint": "4.x"
