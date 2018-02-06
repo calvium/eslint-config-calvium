@@ -21,11 +21,12 @@
     "babel-eslint": "8.2.1",
     "eslint-config-airbnb": "16.1.0",
     "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-flowtype": "2.41.0",
+    "eslint-plugin-flowtype": "2.42.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-react": "7.5.1",
+    "eslint-plugin-react": "7.6.1",
     "eslint-plugin-react-native": "3.2.1",
-    "eslint-plugin-promise": "3.6.0"
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-config-prettier": "2.9.0"
   },
   "peerDependency": {
     "eslint": "4.x"

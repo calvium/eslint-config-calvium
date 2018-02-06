@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
     'flowtype',
     "promise",
-    'react-native'
+    'react-native',
   ],
   parserOptions: {
     ecmaFeatures: {
