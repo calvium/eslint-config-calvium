@@ -205,8 +205,8 @@ module.exports = {
     "promise/no-nesting": "warn",
     "promise/no-promise-in-callback": "warn",
     "promise/no-callback-in-promise": "warn",
-    "promise/avoid-new": "warn",
-    "promise/no-return-in-finally": "warn",
+    "promise/avoid-new": "off",
+    "promise/no-return-in-finally": "off",
   },
   'settings': {
     flowtype: {
