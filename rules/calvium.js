@@ -198,13 +198,13 @@ module.exports = {
     // .. end disabling for T6200
     // Promise rules
     "promise/always-return": "off",
-    "promise/no-return-wrap": "error",
+    "promise/no-return-wrap": "off",
     "promise/param-names": "error",
     "promise/catch-or-return": "error",
     "promise/no-native": "off",
-    "promise/no-nesting": "warn",
-    "promise/no-promise-in-callback": "warn",
-    "promise/no-callback-in-promise": "warn",
+    "promise/no-nesting": "off",
+    "promise/no-promise-in-callback": "off",
+    "promise/no-callback-in-promise": "off",
     "promise/avoid-new": "off",
     "promise/no-return-in-finally": "off",
   },
