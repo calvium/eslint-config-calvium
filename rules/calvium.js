@@ -13,9 +13,6 @@ module.exports = {
       jsx: true,
     },
   },
-  ecmaFeatures: {
-    jsx: true,
-  },
   globals: {
     fetch: false,
     '__DEV__': false,
