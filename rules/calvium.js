@@ -5,15 +5,13 @@ module.exports = {
   },
   plugins: [
     'flowtype',
-    'react-native'
+    "promise",
+    'react-native',
   ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-  },
-  ecmaFeatures: {
-    jsx: true,
   },
   globals: {
     fetch: false,
@@ -56,13 +54,8 @@ module.exports = {
       0
     ],
     'no-return-assign': [0],
-    indent: [
-      'warn',
-      2,
-      {
-        SwitchCase: 1
-      }
-    ],
+    // Prettier deals with the indentation
+    indent: 0,
     'brace-style': [
       'warn',
       '1tbs'
@@ -71,9 +64,8 @@ module.exports = {
       'warn',
       'never'
     ],
-    'no-unused-vars': [
-      'warn'
-    ],
+    // used to denote unused arguments in callbacks
+    "no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
     'arrow-body-style': [
       'warn',
       'as-needed'
@@ -172,6 +164,7 @@ module.exports = {
     'import/no-duplicates': 1,
     "react-native/no-unused-styles": 2,
     "react-native/no-color-literals": 2,
+    "react/prefer-stateless-function": [2, {"ignorePureComponents": true}],
     // Don't force () around `foo` in `foo => { .. do something }`
     "arrow-parens": 0,
     // I think it's ok to have class methods that could be static not static sometimes. (e.g. a `renderEmpty` method on a component)
@@ -198,8 +191,19 @@ module.exports = {
     "no-mixed-operators": 0,
     "no-confusing-arrow": 0,
     "react/jsx-wrap-multilines": 0,
-    "indent": 0
+    "object-curly-newline": [0, {"ObjectExpression": "always", "ObjectPattern": {"multiline": true}}],
     // .. end disabling for T6200
+    // Promise rules
+    "promise/always-return": "off",
+    "promise/no-return-wrap": "off",
+    "promise/param-names": "error",
+    "promise/catch-or-return": "error",
+    "promise/no-native": "off",
+    "promise/no-nesting": "off",
+    "promise/no-promise-in-callback": "off",
+    "promise/no-callback-in-promise": "off",
+    "promise/avoid-new": "off",
+    "promise/no-return-in-finally": "off",
   },
   'settings': {
     flowtype: {
