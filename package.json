@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-calvium",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "eslint configuration to be used in Calvium React Native Projects",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/calvium/eslint-config-calvium.git"
   },
-  "keywords": ["eslint", "calvium"],
+  "keywords": [
+    "eslint",
+    "calvium"
+  ],
   "author": "Pablo Carrillo",
   "license": "MIT",
   "bugs": {
@@ -18,17 +21,17 @@
   },
   "homepage": "https://github.com/calvium/eslint-config-calvium#readme",
   "dependencies": {
-    "babel-eslint": "8.2.1",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-flowtype": "2.42.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-react": "7.6.1",
-    "eslint-plugin-react-native": "3.2.1",
-    "eslint-plugin-promise": "3.6.0",
-    "eslint-config-prettier": "2.9.0"
+    "babel-eslint": "8.2.6",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-flowtype": "3.0.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.11.1",
+    "eslint-plugin-react-native": "3.5.0",
+    "eslint-plugin-promise": "3.8.0",
+    "eslint-config-prettier": "2.10.0"
   },
   "peerDependency": {
-    "eslint": "4.x"
+    "eslint": "5.x"
   }
 }

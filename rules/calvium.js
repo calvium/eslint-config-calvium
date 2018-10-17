@@ -3,7 +3,10 @@ module.exports = {
   env: {
     jest: true
   },
-  plugins: [
+    extends: [
+        "plugin:flowtype/recommended"
+    ],
+    plugins: [
     'flowtype',
     "promise",
     'react-native',
@@ -12,6 +15,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    ecmaVersion: 2018
   },
   globals: {
     fetch: false,
@@ -65,7 +69,7 @@ module.exports = {
       'never'
     ],
     // used to denote unused arguments in callbacks
-    "no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
+    "no-unused-vars": ["warn", {"argsIgnorePattern": "^_", "ignoreRestSiblings": true}],
     'arrow-body-style': [
       'warn',
       'as-needed'
@@ -165,7 +169,8 @@ module.exports = {
     "react-native/no-unused-styles": 2,
     "react-native/no-color-literals": 2,
     "react/prefer-stateless-function": [2, {"ignorePureComponents": true}],
-    // Don't force () around `foo` in `foo => { .. do something }`
+      "react/destructuring-assignment": ["always", { "ignoreClassFields": true }],
+      // Don't force () around `foo` in `foo => { .. do something }`
     "arrow-parens": 0,
     // I think it's ok to have class methods that could be static not static sometimes. (e.g. a `renderEmpty` method on a component)
     "class-methods-use-this": 0,
