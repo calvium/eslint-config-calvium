@@ -1,7 +1,7 @@
 Eslint Config Calvium
 =====================
 
-Current React Native tested versions from `52.x` but it may work in earliers too.
+Current React Native tested versions from `60.x` but it may work in earliers too.
 
 [eslint](http://eslint.org/)
 
@@ -10,28 +10,34 @@ Current React Native tested versions from `52.x` but it may work in earliers too
 This module can be use in any project as a dev dependency, but it focus in RN projects.
 
 ```lang=bash
-npm install eslint-config-calvium --save-dev
+npm install @calvium/eslint-config --save-dev
 #or
-yarn add eslint-config-calvium --dev
+yarn add @calvium/eslint-config --dev
 ```
 
-after that you just need a `.eslintrc` in the same folder than the `package.json` file with this content
+after that you just need a `.eslintrc.js` in the same folder than the `package.json` file with this content
  
 ```lang=js
 // Calvium React Native Project Default ESLint Settings.
-{
-  "extends": "calvium"
-}
+module.exports = {
+  "extends": "@calvium/eslint-config/{config-name}"
+};
 ```
+
+Where `{config-name}` can be one of: 
+
+- `react`
+- `react-native`
+- `node`
 
 ##NOTES
 
-You **must** install the appropiate version of eslint for your project. Version 4 is recommended
+To use this package you **MUST** install all peer dependencies of this package as devDependencies even if you are not using the relevant configuration
 
 ```lang=bash
-npm i eslint@4 --save-dev
+npm install --save-dev eslint@5 eslint-config-prettier @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-native eslint-plugin-promise eslint-config-prettier @react-native-community/eslint-config eslint-plugin-eslint-comments eslint-plugin-react-hooks eslint-plugin-jest eslint-import-resolver-typescript @typescript-eslint/parser
 #or
-yarn add eslint@4 --dev
+yarn add eslint@5 eslint-config-prettier @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-native eslint-plugin-promise eslint-config-prettier @react-native-community/eslint-config eslint-plugin-eslint-comments eslint-plugin-react-hooks eslint-plugin-jest eslint-import-resolver-typescript @typescript-eslint/parser --dev
 ```
 
 To check the package is working in your installation run:
