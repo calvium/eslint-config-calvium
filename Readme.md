@@ -1,7 +1,7 @@
 Eslint Config Calvium
 =====================
 
-Current React Native tested versions from `60.x` but it may work in earliers too.
+Current React Native tested versions from `60.x` but it may work in earlier versions too.
 
 [eslint](http://eslint.org/)
 
