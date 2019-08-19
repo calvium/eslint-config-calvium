@@ -1,8 +1,2 @@
-module.exports = {
-  extends: [
-    'eslint-config-airbnb',
-    './rules/calvium',
-'./rules/prettier'
-  ].map(require.resolve),
-  rules: {}
-};
+// BASE ESLINT CONFIG
+module.exports = require('./lib/typescript.js');
