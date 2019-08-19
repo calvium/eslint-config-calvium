@@ -19,7 +19,7 @@
   "homepage": "https://github.com/calvium/eslint-config-calvium#readme",
   "dependencies": {
   },
-  "peerDependency": {
+  "peerDependencies": {
     "eslint": "5.x",
     "eslint-plugin-import": ">= 2",
     "eslint-plugin-flowtype": ">= 4",
