@@ -7,7 +7,7 @@ Current React Native tested versions from `60.x` but it may work in earlier vers
 
 ## Install
 
-This module can be use in any project as a dev dependency, but it focus in RN projects.
+This module can be use in any vanilla JS, React (web) or React Native project as a dev dependency.
 
 ```lang=bash
 npm install @calvium/eslint-config --save-dev
