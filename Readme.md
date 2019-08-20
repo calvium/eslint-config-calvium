@@ -35,9 +35,9 @@ Where `{config-name}` can be one of:
 To use this package you **MUST** install all peer dependencies of this package as devDependencies even if you are not using the relevant configuration
 
 ```lang=bash
-npm install --save-dev eslint@5 eslint-config-prettier @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-native eslint-plugin-promise eslint-config-prettier @react-native-community/eslint-config eslint-plugin-eslint-comments eslint-plugin-react-hooks eslint-plugin-jest eslint-import-resolver-typescript @typescript-eslint/parser
+npm install --save-dev eslint eslint-config-prettier @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-native eslint-plugin-promise eslint-config-prettier @react-native-community/eslint-config eslint-plugin-eslint-comments eslint-plugin-react-hooks eslint-plugin-jest eslint-import-resolver-typescript @typescript-eslint/parser
 #or
-yarn add eslint@5 eslint-config-prettier @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-native eslint-plugin-promise eslint-config-prettier @react-native-community/eslint-config eslint-plugin-eslint-comments eslint-plugin-react-hooks eslint-plugin-jest eslint-import-resolver-typescript @typescript-eslint/parser --dev
+yarn add eslint eslint-config-prettier @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-native eslint-plugin-promise eslint-config-prettier @react-native-community/eslint-config eslint-plugin-eslint-comments eslint-plugin-react-hooks eslint-plugin-jest eslint-import-resolver-typescript @typescript-eslint/parser --dev
 ```
 
 To check the package is working in your installation run:
