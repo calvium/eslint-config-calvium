@@ -1,6 +1,6 @@
 {
   "name": "@calvium/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "eslint configuration to be used in Calvium Projects",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/calvium/eslint-config-calvium#readme",
   "dependencies": {},
   "peerDependencies": {
-    "eslint": "5.x",
+    "eslint": "6.x",
     "eslint-plugin-import": ">= 2",
     "eslint-plugin-flowtype": ">= 4",
     "eslint-plugin-jsx-a11y": ">= 6",
@@ -30,7 +30,7 @@
     "eslint-plugin-react-native": ">= 3",
     "eslint-plugin-promise": ">= 4",
     "eslint-config-prettier": ">= 6",
-    "@react-native-community/eslint-config": ">= 0.0.6",
+    "@react-native-community/eslint-config": ">= 0.0.5",
     "eslint-plugin-eslint-comments": ">= 3",
     "eslint-plugin-react-hooks": ">= 1",
     "eslint-plugin-jest": ">= 22",
