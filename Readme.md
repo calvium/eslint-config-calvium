@@ -26,9 +26,12 @@ module.exports = {
 
 Where `{config-name}` can be one of: 
 
-- `react`
-- `react-native`
-- `node`
+- `react-default`
+- `react-typescript`
+- `react-native-default`
+- `react-native-typescript`
+- `node-default`
+- `node-typescript`
 
 ##NOTES
 
